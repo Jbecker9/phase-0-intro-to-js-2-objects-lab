@@ -10,6 +10,10 @@ function updateEmployeeWithKeyAndValue(){
     };
 };
 
-destructivelyUpdateEmployeeWithKeyAndValue = employee.name = 'Sam'
+function destructivelyUpdateEmployeeWithKeyAndValue(employee){
+    employee[name] = 'Sam';
+    employee[streetAddress] = '12 Broadway';
+    return employee;
+}
 
-destructivelyUpdateEmployeeWithKeyAndValue = employee.streetAddress = '12 Broadway'
+
